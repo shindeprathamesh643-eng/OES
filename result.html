@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Exam Result</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<header class="top-header">
+
+    <div>
+        <h2>Examination Result</h2>
+    </div>
+
+    <button
+        onclick="logoutStudent()"
+        class="logout-btn"
+    >
+        Logout
+    </button>
+
+</header>
+
+
+<main class="result-page">
+
+
+    <div class="result-card">
+
+        <div class="result-icon">
+            🏆
+        </div>
+
+        <h1>Exam Completed!</h1>
+
+        <p>
+            Student:
+            <strong id="resultStudentName"></strong>
+        </p>
+
+        <p>
+            Subject:
+            <strong id="resultSubject"></strong>
+        </p>
+
+
+        <div class="score-box">
+
+            <span>Your Score</span>
+
+            <strong id="score">
+                0 / 25
+            </strong>
+
+            <small id="percentage">
+                0%
+            </small>
+
+        </div>
+
+
+        <div class="result-stats">
+
+
+            <div class="stat correct-stat">
+
+                <strong id="correct">
+                    0
+                </strong>
+
+                <span>Correct</span>
+
+            </div>
+
+
+            <div class="stat wrong-stat">
+
+                <strong id="wrong">
+                    0
+                </strong>
+
+                <span>Wrong</span>
+
+            </div>
+
+
+            <div class="stat not-stat">
+
+                <strong id="notAttempted">
+                    0
+                </strong>
+
+                <span>Not Attempted</span>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="result-buttons">
+
+            <button
+                class="primary-btn"
+                onclick="viewReview()"
+            >
+                View Answers
+            </button>
+
+
+            <button
+                class="secondary-btn"
+                onclick="takeAnotherExam()"
+            >
+                Take Another Exam
+            </button>
+
+
+            <button
+                class="history-btn"
+                onclick="openHistory()"
+            >
+                Exam History
+            </button>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<script src="script.js"></script>
+
+<script>
+    initResult();
+</script>
+
+</body>
+</html>

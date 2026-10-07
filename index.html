@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Examination System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="login-body">
+
+<div class="login-container">
+
+    <div class="login-card">
+
+        <div class="logo">🎓</div>
+
+        <h1>Online Examination System</h1>
+
+        <p class="subtitle">
+            Test your knowledge with online examinations
+        </p>
+
+        <form id="loginForm" onsubmit="loginStudent(event)">
+
+            <div class="form-group">
+                <label for="studentName">Student Name</label>
+
+                <input
+                    type="text"
+                    id="studentName"
+                    placeholder="Enter your full name"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="studentEmail">Email ID</label>
+
+                <input
+                    type="email"
+                    id="studentEmail"
+                    placeholder="Enter your email ID"
+                    required
+                >
+            </div>
+
+            <button type="submit" class="primary-btn">
+                Enter Examination
+            </button>
+
+        </form>
+
+        <p class="login-note">
+            Enter your details to access the examination system.
+        </p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

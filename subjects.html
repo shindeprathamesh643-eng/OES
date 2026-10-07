@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Select Subject</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="top-header">
+
+    <div>
+        <h2>Online Examination System</h2>
+        <p>Welcome, <span id="studentName"></span></p>
+    </div>
+
+    <div class="header-buttons">
+
+        <button onclick="openHistory()" class="small-btn">
+            📊 History
+        </button>
+
+        <button onclick="logoutStudent()" class="logout-btn">
+            Logout
+        </button>
+
+    </div>
+
+</header>
+
+
+<main class="subjects-page">
+
+    <div class="page-heading">
+
+        <h1>Select Your Subject</h1>
+
+        <p>
+            Choose any subject to start your 25-question examination.
+        </p>
+
+    </div>
+
+
+    <div class="subject-grid">
+
+
+        <div class="subject-card">
+
+            <div class="subject-icon">🌐</div>
+
+            <h2>HTML</h2>
+
+            <p>25 Questions • 25 Marks • 10 Minutes</p>
+
+            <button onclick="startExam('html')">
+                Start Exam
+            </button>
+
+        </div>
+
+
+        <div class="subject-card">
+
+            <div class="subject-icon">🎨</div>
+
+            <h2>CSS</h2>
+
+            <p>25 Questions • 25 Marks • 10 Minutes</p>
+
+            <button onclick="startExam('css')">
+                Start Exam
+            </button>
+
+        </div>
+
+
+        <div class="subject-card">
+
+            <div class="subject-icon">⚡</div>
+
+            <h2>JavaScript</h2>
+
+            <p>25 Questions • 25 Marks • 10 Minutes</p>
+
+            <button onclick="startExam('javascript')">
+                Start Exam
+            </button>
+
+        </div>
+
+
+        <div class="subject-card">
+
+            <div class="subject-icon">🐍</div>
+
+            <h2>Python</h2>
+
+            <p>25 Questions • 25 Marks • 10 Minutes</p>
+
+            <button onclick="startExam('python')">
+                Start Exam
+            </button>
+
+        </div>
+
+
+        <div class="subject-card">
+
+            <div class="subject-icon">☕</div>
+
+            <h2>Java</h2>
+
+            <p>25 Questions • 25 Marks • 10 Minutes</p>
+
+            <button onclick="startExam('java')">
+                Start Exam
+            </button>
+
+        </div>
+
+
+        <div class="subject-card">
+
+            <div class="subject-icon">©️</div>
+
+            <h2>C Programming</h2>
+
+            <p>25 Questions • 25 Marks • 10 Minutes</p>
+
+            <button onclick="startExam('c')">
+                Start Exam
+            </button>
+
+        </div>
+
+
+        <div class="subject-card">
+
+            <div class="subject-icon">➕</div>
+
+            <h2>C++</h2>
+
+            <p>25 Questions • 25 Marks • 10 Minutes</p>
+
+            <button onclick="startExam('cpp')">
+                Start Exam
+            </button>
+
+        </div>
+
+
+        <div class="subject-card">
+
+            <div class="subject-icon">🗄️</div>
+
+            <h2>SQL / DBMS</h2>
+
+            <p>25 Questions • 25 Marks • 10 Minutes</p>
+
+            <button onclick="startExam('sql')">
+                Start Exam
+            </button>
+
+        </div>
+
+
+        <div class="subject-card">
+
+            <div class="subject-icon">⚛️</div>
+
+            <h2>React JS</h2>
+
+            <p>25 Questions • 25 Marks • 10 Minutes</p>
+
+            <button onclick="startExam('react')">
+                Start Exam
+            </button>
+
+        </div>
+
+
+        <div class="subject-card">
+
+            <div class="subject-icon">🟢</div>
+
+            <h2>Node.js</h2>
+
+            <p>25 Questions • 25 Marks • 10 Minutes</p>
+
+            <button onclick="startExam('node')">
+                Start Exam
+            </button>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<script src="script.js"></script>
+
+<script>
+    showStudentName();
+</script>
+
+</body>
+</html>

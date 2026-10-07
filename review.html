@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Answer Review</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<header class="top-header">
+
+    <div>
+        <h2>Answer Review</h2>
+        <p id="reviewSubject"></p>
+    </div>
+
+    <button
+        onclick="logoutStudent()"
+        class="logout-btn"
+    >
+        Logout
+    </button>
+
+</header>
+
+
+<main class="review-page">
+
+    <div
+        id="reviewContainer"
+        class="review-container"
+    >
+        Loading answers...
+    </div>
+
+
+    <div class="review-buttons">
+
+        <button
+            class="primary-btn"
+            onclick="backToResult()"
+        >
+            ← Back to Result
+        </button>
+
+
+        <button
+            class="secondary-btn"
+            onclick="takeAnotherExam()"
+        >
+            Take Another Exam
+        </button>
+
+    </div>
+
+</main>
+
+
+<script src="script.js"></script>
+
+<script>
+    initReview();
+</script>
+
+</body>
+</html>

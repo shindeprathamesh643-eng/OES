@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Examination</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="exam-body">
+
+
+<header class="exam-header">
+
+    <div>
+        <h2 id="subjectTitle">Loading...</h2>
+
+        <p>
+            Student:
+            <span id="examStudentName"></span>
+        </p>
+    </div>
+
+
+    <div class="timer-box">
+
+        <span>Time Remaining</span>
+
+        <strong id="timer">
+            10:00
+        </strong>
+
+    </div>
+
+</header>
+
+
+
+<main class="exam-container">
+
+    <div class="question-card">
+
+
+        <div class="question-top">
+
+            <span id="questionNumber">
+                Question 1 of 25
+            </span>
+
+            <span class="marks">
+                1 Mark
+            </span>
+
+        </div>
+
+
+        <h2 id="questionText">
+            Loading question...
+        </h2>
+
+
+        <div id="options" class="options-container">
+        </div>
+
+
+        <div class="navigation">
+
+            <button
+                id="prevBtn"
+                class="secondary-btn"
+                onclick="previousQuestion()"
+            >
+                ← Previous
+            </button>
+
+
+            <button
+                id="nextBtn"
+                class="primary-btn"
+                onclick="nextQuestion()"
+            >
+                Next →
+            </button>
+
+
+            <button
+                id="submitBtn"
+                class="submit-btn"
+                onclick="submitExam()"
+                style="display:none;"
+            >
+                Submit Exam
+            </button>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<script src="script.js"></script>
+
+<script>
+    initExam();
+</script>
+
+</body>
+</html>

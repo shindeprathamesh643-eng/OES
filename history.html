@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Exam History</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<header class="top-header">
+
+    <div>
+        <h2>My Exam History</h2>
+        <p id="historyStudent"></p>
+    </div>
+
+    <button
+        onclick="logoutStudent()"
+        class="logout-btn"
+    >
+        Logout
+    </button>
+
+</header>
+
+
+<main class="history-page">
+
+    <div class="history-title">
+
+        <h1>Lifetime Exam History</h1>
+
+        <p>
+            Your completed examinations are stored here.
+        </p>
+
+    </div>
+
+
+    <div
+        id="historyContainer"
+        class="history-container"
+    >
+        Loading history...
+    </div>
+
+
+    <div class="history-actions">
+
+        <button
+            class="secondary-btn"
+            onclick="goSubjects()"
+        >
+            ← Back to Subjects
+        </button>
+
+
+        <button
+            class="delete-btn"
+            onclick="clearHistory()"
+        >
+            Clear History
+        </button>
+
+    </div>
+
+</main>
+
+
+<script src="script.js"></script>
+
+<script>
+    initHistory();
+</script>
+
+</body>
+</html>
